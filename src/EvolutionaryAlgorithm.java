@@ -158,7 +158,7 @@ public class EvolutionaryAlgorithm {
 	
 	public Regles run(int genmax) throws IOException{
 		
-		String outName = "C:/Documents and Settings/spruvost/Mes documents/Resultats_HC/EA_";
+		String outName = "C:/Users/Simon/Desktop/Resultats_HC/EA_";
 		String date = new SimpleDateFormat("dd_MM_yy-HH_mm_ss").format(new Date());
 		outName += date + ".dat";
 		

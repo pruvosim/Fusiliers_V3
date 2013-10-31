@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.util.Random;
 
 
-public class MainILS3 {
+public class MainILS {
 
 	/**
 	 * @param args

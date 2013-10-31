@@ -33,9 +33,6 @@ public class IteratedLocalSearch {
 		//Indice de la règle à changer
 		int regle_a_changer = 0;
 
-		//On réinitialise les règles pour garder celles de Initialization
-		//init.init(regles);
-
 		int fit_actuel = automate.f(rules, 20);
 		int fit_ancien = -1;
 
@@ -47,7 +44,7 @@ public class IteratedLocalSearch {
 			{
 				perturbations();
 				init.ajoutReglesBase(meilleures_regles);
-				System.out.println("Perturbations");
+				//System.out.println("Perturbations");
 				compteur = 0;
 			}
 			
@@ -60,7 +57,6 @@ public class IteratedLocalSearch {
 				if(fit_actuel > fit_ancien)
 				{
 					System.out.println("Meilleure perf : " + fit_actuel);
-					//Sauvegarde save = new Sauvegarde("prout", fit_actuel, meilleures_regles);
 					compteur = 0;
 				}
 				else

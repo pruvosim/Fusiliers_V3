@@ -47,9 +47,6 @@ public class HillClimber {
 		//Indice de la règle à changer
 		int regle_a_changer = 0;
 
-		//On réinitialise les règles pour garder celles de Initialization
-		//init.init(regles);
-
 		int fit_actuel = automate.f(rules, 25);
 		int fit_ancien = -1;
 		int best_fitness = -1;
@@ -77,7 +74,6 @@ public class HillClimber {
 					//System.out.println("Meilleure perf : " + fit_actuel);
 					printToFile(fit_actuel, meilleures_regles, ecrivain);
 					best_fitness = fit_actuel;
-					//Sauvegarde save = new Sauvegarde("prout", fit_actuel, meilleures_regles);
 				}
 				
 				fit_ancien = fit_actuel;

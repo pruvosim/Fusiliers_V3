@@ -12,8 +12,8 @@ public class MainEA {
 		
 		Random rand = new Random();
 		
-		EvolutionaryAlgorithm EA = new EvolutionaryAlgorithm(rand,100, 50);
-		EA.run(50);
+		EvolutionaryAlgorithm EA = new EvolutionaryAlgorithm(rand,500, 200);
+		EA.run(100);
 		
 	}
 
